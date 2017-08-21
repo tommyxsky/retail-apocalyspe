@@ -45,8 +45,7 @@ const uglify = new webpack.optimize.UglifyJsPlugin({ // eslint-disable-line
 // OK - now we stitch it together
 const config = {
   entry: {
-    // we only have 1 entry, but we stored entry in an object and
-    // we can add more if we want
+    // we only have 1 entry, but I've set it up for multiple in the future
     App: './public/javascripts/tra-app.js'
   },
   // we're using sourcemaps
