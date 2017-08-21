@@ -83,3 +83,5 @@ app.use(errorHandlers.productionErrors);
 
 // We made it. Export it so we can start the site in start.js
 module.exports = app;
+
+app.use(bodyParser.urlencoded({ extended: true }));
